@@ -68,4 +68,14 @@ $(function() {
   });
 
   updateOptions($('#service').val());
+
+  const swiper = new Swiper('.testimonial-swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.testimonial-nav .testimonial-button-next',
+      prevEl: '.testimonial-nav .testimonial-button-prev',
+    },
+  });
+
 });

@@ -205,7 +205,7 @@ section {
 
 .heading_img img {
   height: auto;
-  max-width: 50px;
+  max-width: 40px;
 }
 
 .sec_heading {
@@ -499,7 +499,7 @@ section {
 
 /* career level */
 .career_level .sec_heading_parent {
-  margin-top: -57px;
+  margin-top: -45px;
 }
 
 .career_grid {
@@ -850,11 +850,14 @@ div[class^="container-"]:has(.special_package_img) {
   text-align: center;
 }
 
+/* testimonial */
+.testimonial-swiper .swiper-slide {
+  max-width: 480px;
+  height: unset;
+}
+
 .testimonial {
   background: var(--gradient-background);
-}
-.testimonial .sec_heading_parent{
-  margin-bottom: 0;
 }
 
 .testimonial .sec_heading {
@@ -863,9 +866,9 @@ div[class^="container-"]:has(.special_package_img) {
 }
 
 .testimonial-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  display: flex;
+  grid-gap: 10px;
+  align-items: center;
 }
 
 .testimonial-nav .button {
@@ -890,6 +893,81 @@ div[class^="container-"]:has(.special_package_img) {
 
 .testimonial-nav .button:focus {
   outline: none;
+}
+
+.testimonial-card {
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: var(--white);
+}
+
+.testimonial-card .stars {
+  display: flex;
+  align-items: center;
+  grid-gap: 8px;
+}
+
+.testimonial-card .star {
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-card .star img {
+  height: 25px;
+  width: 25px;
+}
+
+.testimonial-heading {
+  margin: 15px 0;
+  font-weight: var(--font-black);
+  font-size: clamp(18px, 2vw, 20px);
+}
+
+.testimonial-card .testimonial-text {
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.testimonial-card .reviewer {
+  display: flex;
+  margin-top: auto;
+  align-items: center;
+}
+
+.reviewer span {
+  display: flex;
+  color: var(--bs-gray-600);
+  font-size: clamp(12px, 2vw, 14px);
+}
+
+.testimonial-card .reviewer img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  margin-right: 15px;
+  border: 2px solid var(--primary);
+}
+
+.counter-row{
+  margin-top: 30px;
+}
+
+.counter_count{
+  font-size: 4em;
+}
+
+.counter_count .counter {
+  font-size: 1em;
+  font-weight: var(--font-black);
 }
 
 /* responsive */
