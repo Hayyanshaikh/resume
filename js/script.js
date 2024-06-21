@@ -69,12 +69,24 @@ $(function() {
 
   updateOptions($('#service').val());
 
-  const swiper = new Swiper('.testimonial-swiper', {
+  const testimonialSwiper = new Swiper('.testimonial-swiper', {
     slidesPerView: 'auto',
     spaceBetween: 20,
     navigation: {
       nextEl: '.testimonial-nav .testimonial-button-next',
       prevEl: '.testimonial-nav .testimonial-button-prev',
+    },
+  });
+
+  var resumesSwiper = new Swiper('.resumes-slider', {
+    slidesPerView: 3,
+    centeredSlides: true,
+    spaceBetween: 40,
+    loop: true,
+    autoplay: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
   });
 

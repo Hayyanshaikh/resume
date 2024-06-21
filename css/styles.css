@@ -57,9 +57,8 @@
   --text: #333333;
   --primary: #d52b1e;
   --secondary: #ffd449;
-  --shadow: 0px 10px 15px rgba(213, 43, 30, 0.3);
+  --shadow: 0px 5px 15px rgba(213, 43, 30, 0.3);
   --gradient-background: linear-gradient(180deg, #E33721 0%, #B40D00 100%);
-
 }
 
 p,
@@ -98,9 +97,8 @@ section {
   position: relative;
 }
 
-.btn {
-  border: none;
-  outline: none;
+.btn.black:after {
+  background: var(--black);
 }
 
 .button_parent {
@@ -111,12 +109,14 @@ section {
 }
 
 .btn {
-  --polygon-value: 0px;
+  --polygon-value: 1px;
   display: flex;
   color: var(--white);
   padding: 12px 30px;
-  height: 50px;
+  height: 55px;
   position: relative;
+  border: none;
+  outline: none;
   background: transparent;
   text-transform: uppercase;
   transition: 0.2s ease-in-out;
@@ -134,7 +134,7 @@ section {
 
 .btn:before {
   content: '';
-  --polygon-value: 8px;
+  --polygon-value: 9px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -162,11 +162,11 @@ section {
   z-index: 1;
   transform: translate(-50%, -50%);
   background: var(--white);
-  clip-path: polygon(calc(0% + 17px) calc(0% + var(--polygon-value)),
-    calc(100% - 17px) calc(0% + var(--polygon-value)),
+  clip-path: polygon(calc(0% + 17px) calc(0% + var(--polygon-value) - 1px),
+    calc(100% - 17px) calc(0% + var(--polygon-value) - 1px),
     calc(100% - var(--polygon-value)) calc(50%),
-    calc(100% - 17px) calc(100% - var(--polygon-value)),
-    calc(0% + 17px) calc(100% - var(--polygon-value)),
+    calc(100% - 17px) calc(100% - var(--polygon-value) + 1px),
+    calc(0% + 17px) calc(100% - var(--polygon-value) + 1px),
     calc(0% + var(--polygon-value)) calc(50%));
 }
 
@@ -222,6 +222,8 @@ section {
 }
 
 .sec_heading_parent {
+  max-width: 992px;
+  margin-inline: auto;
   margin-bottom: 60px;
 }
 
@@ -643,10 +645,11 @@ section {
 
 /* consultation */
 .consultation {
-  background-image: url('../images/backgrounds/consultation_bg.webp');
+  overflow: visible;
+  margin-bottom: 130px;
   background-size: cover;
   background-position: center;
-  margin-bottom: 130px;
+  background-image: url('../images/backgrounds/consultation_bg.webp');
 }
 
 .consultation_heading {
@@ -957,17 +960,60 @@ div[class^="container-"]:has(.special_package_img) {
   border: 2px solid var(--primary);
 }
 
-.counter-row{
+.counter-row {
   margin-top: 30px;
 }
 
-.counter_count{
+.counter_count {
   font-size: 4em;
 }
 
 .counter_count .counter {
   font-size: 1em;
   font-weight: var(--font-black);
+}
+
+/* resumes */
+.resumes-slider {
+  padding-inline: 20px;
+}
+
+.resume {
+  box-shadow: 0 0 10px #0002;
+  margin: 20px 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.arrows {
+  border-radius: 50px;
+  transition: 0.2s ease;
+  width: 40px !important;
+  height: 40px !important;
+  background: var(--primary);
+}
+
+.arrows:hover {
+  opacity: 1;
+}
+
+.arrows:after {
+  font-weight: 600;
+  color: var(--white);
+  font-size: 15px !important;
+}
+
+.live_chat_btn::before,
+.live_chat_btn {
+  background: var(--white) !important;
+}
+
+.live_chat_btn span{
+  color: var(--black);
+}
+
+.button_parent:has(.live_chat_btn){
+  filter: drop-shadow(0px 5px 15px #fff3);
 }
 
 /* responsive */
