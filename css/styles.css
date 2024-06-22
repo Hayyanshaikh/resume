@@ -54,7 +54,7 @@
   --font-black: 900;
   --white: #ffffff;
   --black: #000000;
-  --text: #333333;
+  --text: #7f7f7f;
   --primary: #d52b1e;
   --secondary: #ffd449;
   --shadow: 0px 5px 15px rgba(213, 43, 30, 0.3);
@@ -213,7 +213,6 @@ section {
   font-size: clamp(30px, 4vw, 40px);
   text-align: center;
   text-transform: uppercase;
-  color: var(--text);
   padding: 50px 0 10px;
 }
 
@@ -242,11 +241,18 @@ section {
   font-weight: var(--font-regular);
   line-height: 30px;
   text-align: center;
-  color: #494949;
+  color: var(--text);
   max-width: 768px;
   margin: 0 auto;
 }
 
+.webkit_box {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
 
 /* header */
 .header {
@@ -976,13 +982,17 @@ div[class^="container-"]:has(.special_package_img) {
 /* resumes */
 .resumes-slider {
   padding-inline: 20px;
+  display: flex;
 }
 
 .resume {
   box-shadow: 0 0 10px #0002;
-  margin: 20px 10px;
   border-radius: 10px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  max-height: 550px;
+  justify-content: center;
 }
 
 .arrows {
@@ -1008,12 +1018,202 @@ div[class^="container-"]:has(.special_package_img) {
   background: var(--white) !important;
 }
 
-.live_chat_btn span{
+.live_chat_btn span {
   color: var(--black);
 }
 
-.button_parent:has(.live_chat_btn){
+.button_parent:has(.live_chat_btn) {
   filter: drop-shadow(0px 5px 15px #fff3);
+}
+
+/* client */
+.client-grid {
+  display: flex;
+  grid-gap: 35px 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.client-grid figure {
+  height: auto;
+  aspect-ratio: 2.5/0.6;
+  max-width: 170px;
+}
+
+/* employers */
+.employers {
+  background-image: url('../images/backgrounds/employers_bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.employer_card {
+  border: none;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.employer_card .card-body {
+  padding: 25px;
+}
+
+.employer_card .card-title {
+  margin-bottom: 15px;
+  font-weight: var(--font-black);
+  font-size: clamp(18px, 2vw, 20px);
+}
+
+.employer_card .card-text {
+  color: var(--text);
+  -webkit-line-clamp: 4;
+  font-size: clamp(14px, 2vw, 16px);
+}
+
+.employers_contact .btn {
+  width: auto;
+  height: 50px;
+  display: inline-flex;
+}
+
+.employers_contact .btn:after {
+  content: none;
+}
+
+/* faq */
+.faq {
+  background-image: url('../images/backgrounds/flag-canada.webp');
+  background-size: contain;
+  background-position: start;
+  background-repeat: no-repeat;
+}
+
+.accordion-button {
+  padding: 0;
+  background: transparent !important;
+  box-shadow: none !important;
+  font-size: clamp(14px, 2vw, 16px);
+  font-weight: var(--font-bold);
+  color: var(--black) !important;
+}
+
+.accordion-body {
+  padding: 0;
+  color: var(--text);
+  margin-top: 15px;
+  font-size: clamp(14px, 2vw, 15px);
+  transition: 0.2s ease;
+}
+
+.accordion-item {
+  padding: 10px;
+  border: 1px solid transparent !important;
+  background: var(--bs-gray-100);
+  transition: 0.2s ease;
+  border-radius: 6px !important;
+  overflow: hidden;
+}
+
+.accordion-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion-button:after {
+  content: none !important;
+}
+
+.accordion-button i {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  font-size: 13px;
+  align-items: center;
+  border-radius: 50px;
+  color: var(--white);
+  transition: 0.2s ease;
+  justify-content: center;
+  background: var(--primary);
+}
+
+.accordion-item:has(.accordion-collapse.collapse.show) .accordion-button i {
+  rotate: 180deg;
+}
+
+.accordion-item:has(.accordion-collapse.collapse.show) {
+  background: transparent;
+  border-color: var(--bs-gray-400) !important;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 15px;
+  border-radius: 0;
+}
+
+/* footer */
+footer {
+  background-image: url('../images/backgrounds/footer-leaves.svg');
+  background-size: contain;
+  background-position: 0 390px;
+  padding: 80px 0 200px;
+  background-repeat: no-repeat;
+}
+
+footer .logo {
+  width: 100%;
+  height: 70px;
+  margin-bottom: 20px;
+  display: flex;
+  margin-left: -6px;
+}
+
+.footer-text {
+  color: var(--bs-gray-400);
+}
+
+.footer-heading {
+  color: var(--white);
+  font-size: clamp(16px, 2vw, 18px);
+  margin-bottom: 20px;
+}
+
+.list-group-item {
+  padding: 0;
+  background: transparent;
+  border: none !important;
+  display: flex;
+  grid-gap: 5px;
+  align-items: flex-start;
+  color: var(--bs-gray-400);
+  text-transform: capitalize;
+  font-size: clamp(12px, 2vw, 14px);
+}
+
+.list-group {
+  grid-gap: 10px;
+}
+
+.btn-subscribe {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+  font-weight: bold;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.subscribe-form .form-control {
+  background-color: var(--white);
+  border: none;
+  color: var(--black);
+  padding: 10px;
+  border-radius: 4px;
+  transition: border-color 0.3s;
 }
 
 /* responsive */

@@ -83,7 +83,7 @@ $(function() {
     centeredSlides: true,
     spaceBetween: 40,
     loop: true,
-    autoplay: true,
+    autoplay: false,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
