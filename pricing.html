@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Solution | Fundex</title>
+  <link rel="icon" href="./images/brand/favicon.svg" />
+  <!-- phosphor icons -->
+  <link rel="stylesheet" type="text/css" href="./plugins/phosphor-icons-2.1.0/regular/style.css">
+  <link rel="stylesheet" type="text/css" href="./plugins/phosphor-icons-2.1.0/thin/style.css">
+  <link rel="stylesheet" type="text/css" href="./plugins/phosphor-icons-2.1.0/light/style.css">
+  <link rel="stylesheet" type="text/css" href="./plugins/phosphor-icons-2.1.0/bold/style.css">
+  <link rel="stylesheet" type="text/css" href="./plugins/phosphor-icons-2.1.0/fill/style.css">
+  <link rel="stylesheet" type="text/css" href="./plugins/phosphor-icons-2.1.0/duotone/style.css">
+  <!-- styling css -->
+  <link rel="stylesheet" href="./plugins/bootstrap-5.3.3/bootstrap.min.css" />
+  <link rel="stylesheet" href="./plugins/swiper-11.1.4/swiper.min.css" />
+  <link rel="stylesheet" href="./plugins/aos-2.0.0/aos.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header shadow">
+    <div class="header_top py-2">
+      <div class="container-xl">
+        <div class="d-flex justify-content-lg-between justify-content-center">
+          <div class="contact_info_parent d-flex gap-4">
+            <a href="tel:0123456789" class="contact_info d-flex gap-2">
+              <figure class="contact_info_icon">
+                <img src="images/icons/phone-icon.svg" alt="">
+              </figure>
+              <span>0-123-456-789</span>
+            </a>
+            <a href="tel:0123456789" class="contact_info d-flex gap-2">
+              <figure class="contact_info_icon">
+                <img src="images/icons/mail-icon.svg" alt="">
+              </figure>
+              <span>company.email@info.com</span>
+            </a>
+          </div>
+          <div class="social_parent d-lg-flex d-none gap-2">
+            <a href="#" class="social_link scale d-flex gap-2">
+              <figure class="contact_info_icon">
+                <img src="images/icons/fb.svg" alt="">
+              </figure>
+            </a>
+            <a href="#" class="social_link scale d-flex gap-2">
+              <figure class="contact_info_icon">
+                <img src="images/icons/insta.svg" alt="">
+              </figure>
+            </a>
+            <a href="#" class="social_link scale d-flex gap-2">
+              <figure class="contact_info_icon">
+                <img src="images/icons/tw.svg" alt="">
+              </figure>
+            </a>
+            <a href="#" class="social_link scale d-flex gap-2">
+              <figure class="contact_info_icon">
+                <img src="images/icons/linkedin.svg" alt="">
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header_bottom py-3">
+      <div class="container-xl">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="index.html" class="logo">
+            <img src="images/brand/logo.svg" alt="">
+          </a>
+          <div id="menu">
+            <ul class="navbar-nav flex-lg-row flex-column gap-lg-5 gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">PRICING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex gap-2 align-items-center">
+            <div class="button_parent scale d-none d-sm-flex">
+              <a class="btn" href="#" role="button">
+                <span>GET A FREE QUOTE</span>
+              </a>
+            </div>
+            <div class="button_parent menu_btn d-flex d-lg-none scale" data-bs-toggle="offcanvas" data-bs-target="#menu">
+              <a class="btn" href="#" role="button">
+                <i class="ph ph-list"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- main -->
+  <main>
+    <!-- Hero -->
+    <section class="hero hero-banner">
+      <div class="container-xl">
+        <div class="hero_wrapper d-flex flex-column align-items-center gap-5">
+          <hgroup class="hero_heading_wrapper text-center d-flex flex-column gap-2">
+            <div class="heading_img mb-4" data-aos="fade-up">
+              <img src="images/icons/leaves.svg" alt="" />
+            </div>
+            <h1 class="hero_heading" data-aos="fade-up" data-aos-delay="200">Our <span>Pricing Plans</span> Cost Low with Supreme Quality</h1>
+            <p class="hero_desc" data-aos="fade-up" data-aos-delay="400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac lectus sodales, fringilla dui eu, rhoncus risus estibulum faucibus ipsum eu velit aliquam.</p>
+          </hgroup>
+        </div>
+        <div class="row gy-4 mt-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="card pricing_card border-0">
+              <div class="card-header bg-danger text-white text-center">
+                <h4>Starter</h4>
+                <small>An expertly written and keyword-optimized resume that sets you apart.</small>
+              </div>
+              <div class="card-body border">
+                <h1 class="pricing_price display-6 d-flex flex-column fw-bold text-center">
+                  <span class="fs-5 text-muted">
+                    <del>$179</del>
+                  </span>
+                  <span>$149</span>
+                </h1>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item p-0 py-2 d-flex gap-2">
+                    <img src="images\icons\check_icon.svg" alt="" class="mt-1" height="25px">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur.</span>
+                  </li>
+                  <li class="list-group-item p-0 py-2 d-flex gap-2">
+                    <img src="images\icons\check_icon.svg" alt="" class="mt-1" height="25px">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur.</span>
+                  </li>
+                  <li class="list-group-item p-0 py-2 d-flex gap-2">
+                    <img src="images\icons\check_icon.svg" alt="" class="mt-1" height="25px">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur.</span>
+                  </li>
+                  <li class="list-group-item p-0 py-2 d-flex gap-2">
+                    <img src="images\icons\check_icon.svg" alt="" class="mt-1" height="25px">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur.</span>
+                  </li>
+                  <li class="list-group-item p-0 py-2 d-flex gap-2">
+                    <img src="images\icons\check_icon.svg" alt="" class="mt-1" height="25px">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur.</span>
+                  </li>
+                  <li class="list-group-item p-0 py-2 d-flex gap-2">
+                    <img src="images\icons\check_icon.svg" alt="" class="mt-1" height="25px">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur.</span>
+                  </li>
+                </ul>
+                <button class="btn btn-primary btn-lg mt-3">
+                  <span>select this package</span>
+                </button>
+                <div class="online_payment">
+                  <figure>
+                    <img src="images/icons/online_payments.svg" alt="PayPal" class="img-fluid">
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="card pricing_card border-0">
+              <div class="card-header bg-danger text-white text-center">
+                <h4>Premium</h4>
+                <small>An expertly written and keyword-optimized resume that sets you apart.</small>
+              </div>
+              <div class="card-body border">
+                <h1 class="pricing_price display-6 d-flex flex-column fw-bold text-center">
+                  <span class="fs-5 text-muted">
+                    <del>$309</del>
+                  </span>
+                  <span>$267</span>
+                </h1>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item p-0 py-2 d-flex gap-2">
+                    <img src="images\icons\check_icon.svg" alt="" class="mt-1" height="25px">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur.</span>
+                  </li>
+                  <li class="list-group-item p-0 py-2 d-flex gap-2">
+                    <img src="images\icons\check_icon.svg" alt="" class="mt-1" height="25px">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur.</span>
+                  </li>
+                  <li class="list-group-item p-0 py-2 d-flex gap-2">
+                    <img src="images\icons\check_icon.svg" alt="" class="mt-1" height="25px">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur.</span>
+                  </li>
+                  <li class="list-group-item p-0 py-2 d-flex gap-2">
+                    <img src="images\icons\check_icon.svg" alt="" class="mt-1" height="25px">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur.</span>
+                  </li>
+                  <li class="list-group-item p-0 py-2 d-flex gap-2">
+                    <img src="images\icons\check_icon.svg" alt="" class="mt-1" height="25px">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur.</span>
+                  </li>
+                  <li class="list-group-item p-0 py-2 d-flex gap-2">
+                    <img src="images\icons\check_icon.svg" alt="" class="mt-1" height="25px">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur.</span>
+                  </li>
+                </ul>
+                <button class="btn btn-primary btn-lg mt-3">
+                  <span>select this package</span>
+                </button>
+                <div class="online_payment">
+                  <figure>
+                    <img src="images/icons/online_payments.svg" alt="PayPal" class="img-fluid">
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="card pricing_card border-0">
+              <div class="card-header bg-danger text-white text-center">
+                <h4>Starter</h4>
+                <small>An expertly written and keyword-optimized resume that sets you apart.</small>
+              </div>
+              <div class="card-body border">
+                <h1 class="pricing_price display-6 d-flex flex-column fw-bold text-center">
+                  <span class="fs-5 text-muted">
+                    <del>$467</del>
+                  </span>
+                  <span>$385</span>
+                </h1>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item p-0 py-2 d-flex gap-2">
+                    <img src="images\icons\check_icon.svg" alt="" class="mt-1" height="25px">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur.</span>
+                  </li>
+                  <li class="list-group-item p-0 py-2 d-flex gap-2">
+                    <img src="images\icons\check_icon.svg" alt="" class="mt-1" height="25px">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur.</span>
+                  </li>
+                  <li class="list-group-item p-0 py-2 d-flex gap-2">
+                    <img src="images\icons\check_icon.svg" alt="" class="mt-1" height="25px">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur.</span>
+                  </li>
+                  <li class="list-group-item p-0 py-2 d-flex gap-2">
+                    <img src="images\icons\check_icon.svg" alt="" class="mt-1" height="25px">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur.</span>
+                  </li>
+                  <li class="list-group-item p-0 py-2 d-flex gap-2">
+                    <img src="images\icons\check_icon.svg" alt="" class="mt-1" height="25px">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur.</span>
+                  </li>
+                  <li class="list-group-item p-0 py-2 d-flex gap-2">
+                    <img src="images\icons\check_icon.svg" alt="" class="mt-1" height="25px">
+                    <span class="text-muted">Lorem ipsum dolor sit amet, consectetur.</span>
+                  </li>
+                </ul>
+                <button class="btn btn-primary btn-lg mt-3">
+                  <span>select this package</span>
+                </button>
+                <div class="online_payment">
+                  <figure>
+                    <img src="images/icons/online_payments.svg" alt="PayPal" class="img-fluid">
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- special package -->
+    <section class="special_package bg-black">
+      <div class="container-xl">
+        <div class="row">
+          <div class="col-md-6" data-aos="fade-up">
+            <hgroup class="special_package_group">
+              <h4 class="special_package_heading sec_heading text-start"><span>Elite Executive</span> Priority Package</h4>
+              <div class="special_package_prices">
+                <h4 class="special_package_saleprice">$789</h4>
+                <h5 class="special_package_regularprice"><del>$999</del></h5>
+              </div>
+              <p class="special_package_desc sec_desc text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in purus ac augue accumsan consequat. Nulla facilisi. Vestibulum consequat molestie eleifend. Aliquam tincidunt odio non luctus porta.</p>
+            </hgroup>
+            <ul class="list-group list-group-flush special_package_features">
+              <li class="list-group-item">
+                <img src="images/icons/check_icon.svg" alt="">
+                <span>Professional Resume</span>
+              </li>
+              <li class="list-group-item">
+                <img src="images/icons/check_icon.svg" alt="">
+                <span>Unlimited Revisions</span>
+              </li>
+              <li class="list-group-item">
+                <img src="images/icons/check_icon.svg" alt="">
+                <span>Unlimited Revisions</span>
+              </li>
+              <li class="list-group-item">
+                <img src="images/icons/check_icon.svg" alt="">
+                <span>Professional Resume</span>
+              </li>
+              <li class="list-group-item">
+                <img src="images/icons/check_icon.svg" alt="">
+                <span>Unlimited Revisions</span>
+              </li>
+              <li class="list-group-item">
+                <img src="images/icons/check_icon.svg" alt="">
+                <span>Unlimited Revisions</span>
+              </li>
+              <li class="list-group-item">
+                <img src="images/icons/check_icon.svg" alt="">
+                <span>Professional Resume</span>
+              </li>
+              <li class="list-group-item">
+                <img src="images/icons/check_icon.svg" alt="">
+                <span>Unlimited Revisions</span>
+              </li>
+              <li class="list-group-item">
+                <img src="images/icons/check_icon.svg" alt="">
+                <span>Unlimited Revisions</span>
+              </li>
+            </ul>
+            <div class="button_parent justify-content-start scale">
+              <a href="#" class="btn">
+                <span>ORDER NOW</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-down">
+            <figure class="special_package_img">
+              <img src="images/backgrounds/special_package.svg" class="img-fluid" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- career -->
+    <section class="career service-career my-0 py-5">
+      <div class="container-xl">
+        <div class="bg_box"></div>
+        <div class="row align-items-center" data-aos="fade-up">
+          <div class="col-md-6">
+            <figure class="career_vdo">
+              <img src="images/backgrounds/career.webp" alt="">
+            </figure>
+          </div>
+          <div class="col-md-5 offset-1">
+            <div class="career_content d-flex flex-column align-items-start">
+              <h3 class="career_heading mb-3" data-aos="fade-up">
+                Unlock Your Career Opportunities with Pro Resume Writers
+              </h3>
+              <p class="career_pera" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et magna convallis lacus elementum eleifend. Sed dictum tincidunt erat, aliquam porta erat tincidunt sit amet. Nunc sit amet gravida justo.
+                <div data-aos="fade-up">
+                  <div class="button_parent scale mt-4">
+                    <a class="btn" href="#" role="button">
+                      <span>GET A FREE QUOTE</span>
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer class="bg-black">
+    <div class="footer-top">
+      <div class="container-xl">
+        <div class="row">
+          <div class="col-xl-2">
+            <div class="logo">
+              <img src="images/brand/logo-white.svg" alt="">
+            </div>
+            <p class="footer-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id laoreet sem. Curabitur aliquam augue ante, vitae sagittis enim dictum a. Fusce faucibus purus id nulla suscipit semper
+            </p>
+          </div>
+          <div class="col-xl-2 offset-xl-1">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="list-group">
+              <li class="list-group-item">Sitemap</li>
+              <li class="list-group-item">About Us</li>
+              <li class="list-group-item">Contact Us</li>
+              <li class="list-group-item">Reviews</li>
+              <li class="list-group-item">Free CV Review</li>
+              <li class="list-group-item">Blog</li>
+            </ul>
+          </div>
+          <div class="col-xl-2">
+            <h5 class="footer-heading">Services</h5>
+            <ul class="list-group">
+              <li class="list-group-item">Resume Writing Service</li>
+              <li class="list-group-item">Job Application Forms</li>
+              <li class="list-group-item">CV Editing</li>
+              <li class="list-group-item">Nursing CV Writing</li>
+              <li class="list-group-item">IT CV Writing Service</li>
+              <li class="list-group-item">Cover Letter Writing</li>
+              <li class="list-group-item">Management CV Writing</li>
+              <li class="list-group-item">Graduate CV Writing</li>
+              <li class="list-group-item">Construction CV Writing</li>
+            </ul>
+          </div>
+          <div class="col-xl-3">
+            <h5 class="footer-heading">Get in Touch</h5>
+            <ul class="list-group gap-3">
+              <li class="list-group-item">
+                <object data="./images/icons/pin.svg" width="20"></object>
+                <span>8819 Ohio St. South Gate, CA 90280</span>
+              </li>
+              <li class="list-group-item">
+                <object data="./images/icons/email.svg" width="20"></object>
+                <span class="webkit_box">ResumeServicesCanada@info.com</span>
+              </li>
+              <li class="list-group-item">
+                <object data="./images/icons/phone.svg" width="20"></object>
+                <span>+0-123-456-789</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-2">
+            <h5 class="footer-heading">Join a Newsletter</h5>
+            <form class="subscribe-form">
+              <div class="mb-3">
+                <label for="email" class="form-label text-light">Your Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+              </div>
+              <button type="submit" class="btn-subscribe">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container-xl">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="text-white">© copyright 2023 Resume Services Canada, All Rights Reserved</p>
+          </div>
+          <div class="col-md-6 text-end">
+            <a href="#" class="footer-link text-white">Terms and Conditions</a>
+            <a href="#" class="footer-link text-white">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- script files -->
+  <script type="text/javascript" src="./plugins/swiper-11.1.4/swiper.min.js"></script>
+  <script type="text/javascript" src="./plugins/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="./plugins/jquery-3.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./plugins/jquery-3.7.1/counter.min.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+  <script type="text/javascript" src="./plugins/aos-2.0.0/aos.js"></script>
+  <script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 0,
+  });
+  </script>
+</body>
+
+</html>

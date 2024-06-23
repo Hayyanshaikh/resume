@@ -85,7 +85,17 @@ $(function() {
     centeredSlides: true,
     spaceBetween: 40,
     loop: true,
-    autoplay: false,
+    autoplay: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  var clientSwiper = new Swiper('.client-swiper', {
+    slidesPerView: "auto",
+    spaceBetween: 40,
+    autoplay: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
