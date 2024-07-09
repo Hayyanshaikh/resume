@@ -8,68 +8,6 @@ $(function() {
     convertToOffcanvas();
   }).trigger('resize');
 
-  if (window.location.pathname === "/") { // Ensure this runs only on the homepage
-    var options = {
-      'resume': {
-        'careerLevel': [
-          'Early Career Level - 0 to 3 years',
-          'Mid Career Level - 3 to 7 years',
-          'Senior Career Level - 7+ years'
-        ],
-        'deadline': [
-          '7 Days',
-          '5 Days',
-          '3 Days'
-        ]
-      },
-      'cover-letter': {
-        'careerLevel': [
-          'Entry Level',
-          'Experienced',
-          'Managerial Level'
-        ],
-        'deadline': [
-          '10 Days',
-          '7 Days',
-          '5 Days'
-        ]
-      },
-      'linkedin': {
-        'careerLevel': [
-          'Internship',
-          'Professional',
-          'Executive'
-        ],
-        'deadline': [
-          '14 Days',
-          '10 Days',
-          '7 Days'
-        ]
-      }
-    };
-
-    function updateOptions(service) {
-      var careerLevels = options[service].careerLevel;
-      var deadlines = options[service].deadline;
-
-      $('#career-level').empty();
-      careerLevels.forEach(function(level) {
-        $('#career-level').append(new Option(level, level));
-      });
-
-      $('#deadline').empty();
-      deadlines.forEach(function(time) {
-        $('#deadline').append(new Option(time, time));
-      });
-    }
-
-    $('#service').change(function() {
-      var selectedService = $(this).val();
-      updateOptions(selectedService);
-    });
-
-    updateOptions($('#service').val());
-  }
 
   const testimonialSwiper = new Swiper('.testimonial-swiper', {
     slidesPerView: 'auto',
@@ -85,11 +23,28 @@ $(function() {
     centeredSlides: true,
     spaceBetween: 40,
     loop: true,
-    autoplay: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      }
+    }
   });
 
   var clientSwiper = new Swiper('.client-swiper', {

@@ -72,6 +72,10 @@
             <img src="images/brand/logo.svg" alt="">
           </a>
           <div id="menu">
+            <div class="offcanvas-header d-lg-none">
+              <h5 class="offcanvas-title" id="offcanvasLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
             <ul class="navbar-nav flex-lg-row flex-column gap-lg-5 gap-3">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
@@ -105,7 +109,7 @@
         </div>
       </div>
     </div>
-  </header>
+  </heade>
   <!-- main -->
   <main>
     <!-- Hero -->
@@ -278,7 +282,7 @@
     <section class="special_package bg-black">
       <div class="container-xl">
         <div class="row">
-          <div class="col-md-6" data-aos="fade-up">
+          <div class="col-lg-6" data-aos="fade-up">
             <hgroup class="special_package_group">
               <h4 class="special_package_heading sec_heading text-start"><span>Elite Executive</span> Priority Package</h4>
               <div class="special_package_prices">
@@ -331,7 +335,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-6" data-aos="fade-down">
+          <div class="col-lg-6 d-lg-flex d-none" data-aos="fade-down">
             <figure class="special_package_img">
               <img src="images/backgrounds/special_package.svg" class="img-fluid" alt="">
             </figure>
@@ -343,13 +347,13 @@
     <section class="career service-career my-0 py-5">
       <div class="container-xl">
         <div class="bg_box"></div>
-        <div class="row align-items-center" data-aos="fade-up">
+        <div class="row gy-5 align-items-center" data-aos="fade-up">
           <div class="col-md-6">
             <figure class="career_vdo">
               <img src="images/backgrounds/career.webp" alt="">
             </figure>
           </div>
-          <div class="col-md-5 offset-1">
+          <div class="col-md-5 offset-md-1">
             <div class="career_content d-flex flex-column align-items-start">
               <h3 class="career_heading mb-3" data-aos="fade-up">
                 Unlock Your Career Opportunities with Pro Resume Writers
@@ -371,9 +375,10 @@
   <!-- footer -->
   <footer class="bg-black">
     <div class="footer-top">
+      <img class="footer-leaves d-none d-xl-block" src="./images/backgrounds/footer-leaves.svg" alt="">
       <div class="container-xl">
-        <div class="row">
-          <div class="col-xl-2">
+        <div class="row gy-4">
+          <div class="col-xl-2 col-lg-4 col-md-6">
             <div class="logo">
               <img src="images/brand/logo-white.svg" alt="">
             </div>
@@ -381,7 +386,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id laoreet sem. Curabitur aliquam augue ante, vitae sagittis enim dictum a. Fusce faucibus purus id nulla suscipit semper
             </p>
           </div>
-          <div class="col-xl-2 offset-xl-1">
+          <div class="col-xl-2 col-lg-4 col-md-6 offset-xl-1">
             <h5 class="footer-heading">Quick Links</h5>
             <ul class="list-group">
               <li class="list-group-item">Sitemap</li>
@@ -392,7 +397,7 @@
               <li class="list-group-item">Blog</li>
             </ul>
           </div>
-          <div class="col-xl-2">
+          <div class="col-xl-2 col-lg-4 col-md-6">
             <h5 class="footer-heading">Services</h5>
             <ul class="list-group">
               <li class="list-group-item">Resume Writing Service</li>
@@ -406,7 +411,7 @@
               <li class="list-group-item">Construction CV Writing</li>
             </ul>
           </div>
-          <div class="col-xl-3">
+          <div class="col-xl-3 col-lg-4 col-md-6">
             <h5 class="footer-heading">Get in Touch</h5>
             <ul class="list-group gap-3">
               <li class="list-group-item">
@@ -423,7 +428,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-xl-2">
+          <div class="col-xl-2 col-lg-4 col-md-6">
             <h5 class="footer-heading">Join a Newsletter</h5>
             <form class="subscribe-form">
               <div class="mb-3">
@@ -438,11 +443,11 @@
     </div>
     <div class="footer-bottom">
       <div class="container-xl">
-        <div class="row">
-          <div class="col-md-6">
+        <div class="row gy-2">
+          <div class="col-lg-6 text-center text-lg-start">
             <p class="text-white">© copyright 2023 Resume Services Canada, All Rights Reserved</p>
           </div>
-          <div class="col-md-6 text-end">
+          <div class="col-lg-6 text-center text-lg-end">
             <a href="#" class="footer-link text-white">Terms and Conditions</a>
             <a href="#" class="footer-link text-white">Privacy Policy</a>
           </div>
@@ -454,7 +459,6 @@
   <script type="text/javascript" src="./plugins/swiper-11.1.4/swiper.min.js"></script>
   <script type="text/javascript" src="./plugins/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="./plugins/jquery-3.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./plugins/jquery-3.7.1/counter.min.js"></script>
   <script type="text/javascript" src="./js/script.js"></script>
   <script type="text/javascript" src="./plugins/aos-2.0.0/aos.js"></script>
   <script>
