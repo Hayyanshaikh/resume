@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Solution | Fundex</title>
+  <link rel="icon" href="./images/brand/favicon.svg" />
+  <!-- phosphor icons -->
+  <link rel="stylesheet" type="text/css" href="./plugins/phosphor-icons-2.1.0/regular/style.css">
+  <link rel="stylesheet" type="text/css" href="./plugins/phosphor-icons-2.1.0/thin/style.css">
+  <link rel="stylesheet" type="text/css" href="./plugins/phosphor-icons-2.1.0/light/style.css">
+  <link rel="stylesheet" type="text/css" href="./plugins/phosphor-icons-2.1.0/bold/style.css">
+  <link rel="stylesheet" type="text/css" href="./plugins/phosphor-icons-2.1.0/fill/style.css">
+  <link rel="stylesheet" type="text/css" href="./plugins/phosphor-icons-2.1.0/duotone/style.css">
+  <!-- styling css -->
+  <link rel="stylesheet" href="./plugins/bootstrap-5.3.3/bootstrap.min.css" />
+  <link rel="stylesheet" href="./plugins/swiper-11.1.4/swiper.min.css" />
+  <link rel="stylesheet" href="./plugins/aos-2.0.0/aos.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header shadow">
+    <div class="header_top py-2">
+      <div class="container-xl">
+        <div class="d-flex justify-content-lg-between justify-content-center">
+          <div class="contact_info_parent d-flex gap-4">
+            <a href="tel:0123456789" class="contact_info d-flex gap-2">
+              <figure class="contact_info_icon">
+                <img src="images/icons/phone-icon.svg" alt="">
+              </figure>
+              <span>0-123-456-789</span>
+            </a>
+            <a href="tel:0123456789" class="contact_info d-flex gap-2">
+              <figure class="contact_info_icon">
+                <img src="images/icons/mail-icon.svg" alt="">
+              </figure>
+              <span>company.email@info.com</span>
+            </a>
+          </div>
+          <div class="social_parent d-lg-flex d-none gap-2">
+            <a href="#" class="social_link scale d-flex gap-2">
+              <figure class="contact_info_icon">
+                <img src="images/icons/fb.svg" alt="">
+              </figure>
+            </a>
+            <a href="#" class="social_link scale d-flex gap-2">
+              <figure class="contact_info_icon">
+                <img src="images/icons/insta.svg" alt="">
+              </figure>
+            </a>
+            <a href="#" class="social_link scale d-flex gap-2">
+              <figure class="contact_info_icon">
+                <img src="images/icons/tw.svg" alt="">
+              </figure>
+            </a>
+            <a href="#" class="social_link scale d-flex gap-2">
+              <figure class="contact_info_icon">
+                <img src="images/icons/linkedin.svg" alt="">
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header_bottom py-3">
+      <div class="container-xl">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="index.html" class="logo">
+            <img src="images/brand/logo.svg" alt="">
+          </a>
+          <div id="menu">
+            <div class="offcanvas-header d-lg-none">
+              <h5 class="offcanvas-title" id="offcanvasLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <ul class="navbar-nav flex-lg-row flex-column gap-lg-5 gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">PRICING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex gap-2 align-items-center">
+            <div class="button_parent scale d-none d-sm-flex">
+              <a class="btn" href="#" role="button">
+                <span>GET A FREE QUOTE</span>
+              </a>
+            </div>
+            <div class="button_parent menu_btn d-flex d-lg-none scale" data-bs-toggle="offcanvas" data-bs-target="#menu">
+              <a class="btn" href="#" role="button">
+                <i class="ph ph-list"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- main -->
+  <main>
+    <!-- Hero -->
+    <section class="hero hero-banner pb-0">
+      <div class="container-xl">
+        <div class="hero_wrapper d-flex flex-column align-items-center gap-5">
+          <hgroup class="hero_heading_wrapper text-center d-flex flex-column gap-2">
+            <div class="heading_img mb-4" data-aos="fade-up">
+              <img src="images/icons/leaves.svg" alt="" />
+            </div>
+            <h1 class="hero_heading" data-aos="fade-up">place your <span>order</span> here</h1>
+            <h6 class="text-uppercase fw-bold" data-aos="fade-up">It's Fast, Secure and Confidential</h6>
+            <div data-aos="fade-up">
+              <div class="button_parent scale">
+                <a href="#" class="btn">
+                  <span>make my resume now</span>
+                </a>
+              </div>
+            </div>
+          </hgroup>
+        </div>
+      </div>
+      <div class="order-form-section order-form bg-white">
+        <div class="container-xl">
+          <div class="row gy-3">
+            <div class="col-lg-4 col-sm-6">
+              <div class="form-group">
+                <label for="service">Select a Service:</label>
+                <select class="form-select" aria-label="Default select example" id="service">
+                  <option selected>Open this select menu</option>
+                  <option value="1">Resume Writing</option>
+                  <option value="2">Resume Review</option>
+                  <option value="3">LinkedIn Profile Optimization</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="form-group">
+                <label for="career">Select Career:</label>
+                <select class="form-select" aria-label="Default select example" id="career">
+                  <option selected>Open this select menu</option>
+                  <option value="1">Software Engineer</option>
+                  <option value="2">Product Manager</option>
+                  <option value="3">Data Scientist</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="form-group">
+                <label for="career-level">Select Career Level:</label>
+                <select class="form-select" aria-label="Default select example" id="career-level">
+                  <option selected>Open this select menu</option>
+                  <option value="1">Entry Level</option>
+                  <option value="2">Mid Level</option>
+                  <option value="3">Senior Level</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" class="form-control" id="fname" placeholder="Enter First Name">
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" class="form-control" id="lname" placeholder="Enter Last Name">
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="form-group">
+                <label for="contact">Phone | Email</label>
+                <input type="text" class="form-control" id="contact" placeholder="Enter Phone Number or Email Address">
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-6">
+              <div class="form-group">
+                <label for="message">Additional Instructions</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Enter Additional Instructions"></textarea>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="form-group">
+                <label for="file-upload" style="display: block;">Files Attachment</label>
+                <label class="file-upload-container">
+                  <input type="file" id="file-upload" style="display: none;" multiple>
+                  <div class="upload-content">
+                    <i class="ph ph-cloud-arrow-up"></i>
+                    <p>Drop files here or <span class="click-to-upload">Click to upload</span></p>
+                  </div>
+                </label>
+                <p class="file-types">.doc/.docx/.text/.pdf</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6">
+              <div class="form-group">
+                <label for="deadline">Deadline</label>
+                <div class="row gy-3">
+                  <div class="col-md-8">
+                    <select class="form-select date-input" id="deadline-date">
+                      <option value="">Select Date</option>
+                      <option value="today">Aaj</option>
+                      <option value="tomorrow">Kal</option>
+                      <option value="next-week">Agle hafte</option>
+                      <!-- Add more date options here as needed -->
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <select class="form-select time-input" id="deadline-time">
+                      <option value="">Select Time</option>
+                      <option value="09:00">09:00 AM</option>
+                      <option value="12:00">12:00 PM</option>
+                      <option value="15:00">03:00 PM</option>
+                      <!-- Add more time options here as needed -->
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <ul class="list-group order-form-pricing">
+                <li class="list-group-item">
+                  Starter Resume Writing
+                  <span>$149.00</span>
+                </li>
+                <li class="list-group-item">
+                  Fast delivery (2 days)
+                  <span>$10.00</span>
+                </li>
+                <li class="list-group-item">
+                  Total
+                  <span class="total">$169.00</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="button_parent scale">
+                <a class="btn" href="#" role="button">
+                  <span>Proceed To Checkout</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row my-4">
+            <div class="col-md-6">
+              <h5 class="we-accept-heading">We Accept</h5>
+              <div class="we-accept d-flex flex-wrap gap-2 border rounded p-4">
+                <figure>
+                  <img src="images/payment-icons/Paypal.svg" alt="">
+                </figure>
+                <figure>
+                  <img src="images/payment-icons/Visa.svg" alt="">
+                </figure>
+                <figure>
+                  <img src="images/payment-icons/MS-Horizontal.svg" alt="">
+                </figure>
+                <figure>
+                  <img src="images/payment-icons/Union-Pay.svg" alt="">
+                </figure>
+                <figure>
+                  <img src="images/payment-icons/Discover-Horizontal.svg" alt="">
+                </figure>
+                <figure>
+                  <img src="images/payment-icons/BOA.svg" alt="">
+                </figure>
+                <figure>
+                  <img src="images/payment-icons/Citibank.svg" alt="">
+                </figure>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h5 class="we-accept-heading">We Accept</h5>
+              <div class="secured-by d-flex flex-wrap gap-2 border rounded p-4">
+                <figure class="mcafee-secure">
+                  <img src="images/secured-by/mcafee-secure-logo.svg" alt="">
+                </figure>
+                <figure>
+                  <img src="images/secured-by/secure1.svg" alt="">
+                </figure>
+                <figure>
+                  <img src="images/secured-by/secure2.svg" alt="">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer class="bg-black">
+    <div class="footer-top">
+      <img class="footer-leaves d-none d-xl-block" src="./images/backgrounds/footer-leaves.svg" alt="">
+      <div class="container-xl">
+        <div class="row gy-4">
+          <div class="col-xl-2 col-lg-4 col-md-6">
+            <div class="logo">
+              <img src="images/brand/logo-white.svg" alt="">
+            </div>
+            <p class="footer-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id laoreet sem. Curabitur aliquam augue ante, vitae sagittis enim dictum a. Fusce faucibus purus id nulla suscipit semper
+            </p>
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-6 offset-xl-1">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="list-group">
+              <li class="list-group-item">Sitemap</li>
+              <li class="list-group-item">About Us</li>
+              <li class="list-group-item">Contact Us</li>
+              <li class="list-group-item">Reviews</li>
+              <li class="list-group-item">Free CV Review</li>
+              <li class="list-group-item">Blog</li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-6">
+            <h5 class="footer-heading">Services</h5>
+            <ul class="list-group">
+              <li class="list-group-item">Resume Writing Service</li>
+              <li class="list-group-item">Job Application Forms</li>
+              <li class="list-group-item">CV Editing</li>
+              <li class="list-group-item">Nursing CV Writing</li>
+              <li class="list-group-item">IT CV Writing Service</li>
+              <li class="list-group-item">Cover Letter Writing</li>
+              <li class="list-group-item">Management CV Writing</li>
+              <li class="list-group-item">Graduate CV Writing</li>
+              <li class="list-group-item">Construction CV Writing</li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <h5 class="footer-heading">Get in Touch</h5>
+            <ul class="list-group gap-3">
+              <li class="list-group-item">
+                <object data="./images/icons/pin.svg" width="20"></object>
+                <span>8819 Ohio St. South Gate, CA 90280</span>
+              </li>
+              <li class="list-group-item">
+                <object data="./images/icons/email.svg" width="20"></object>
+                <span class="webkit_box">ResumeServicesCanada@info.com</span>
+              </li>
+              <li class="list-group-item">
+                <object data="./images/icons/phone.svg" width="20"></object>
+                <span>+0-123-456-789</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-4 col-md-6">
+            <h5 class="footer-heading">Join a Newsletter</h5>
+            <form class="subscribe-form">
+              <div class="mb-3">
+                <label for="email" class="form-label text-light">Your Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+              </div>
+              <button type="submit" class="btn-subscribe">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container-xl">
+        <div class="row gy-2">
+          <div class="col-lg-6 text-center text-lg-start">
+            <p class="text-white">© copyright 2023 Resume Services Canada, All Rights Reserved</p>
+          </div>
+          <div class="col-lg-6 text-center text-lg-end">
+            <a href="#" class="footer-link text-white">Terms and Conditions</a>
+            <a href="#" class="footer-link text-white">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- script files -->
+  <script type="text/javascript" src="./plugins/swiper-11.1.4/swiper.min.js"></script>
+  <script type="text/javascript" src="./plugins/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="./plugins/jquery-3.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+  <script type="text/javascript" src="./plugins/aos-2.0.0/aos.js"></script>
+  <script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 0,
+  });
+  </script>
+</body>
+
+</html>
